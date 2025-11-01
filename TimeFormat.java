@@ -1,17 +1,48 @@
 // Represents the hh:mm time format using an AM/PM format. 
 public class TimeFormat {
-	public static void main(String[] args) {
-		// In Java, the command-line arguments args[0], args[1], ... are represented
-		// each by a string. In this program, the single "hh:mm" input is represented
-		// by the single command-line string argument args[0]. 
-		//   
-		// The following statement handles the hours part of the input.
-		// It concatenates the empty string "" with the leftmost hour-digit. 
-		// It then concatenates the resulting string with the rightmost hour-digit,
-		// and then uses parseInt to cast the resulting string as an int.
-		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
-		// Does the same with the minutes part of the input.
-		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
-        // Replace this comment with the rest of your code
+	public static void main(String[] args) 
+	{	
+		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1)); // getting the hours
+		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4)); // getting the miuntes
+		if (hours>=12) // if the number is bigger then 12 we need to change it to the apropriete format
+		{
+			if(hours>12)
+			{
+			hours=hours-12; // we minus 12 beacause then its suite to wantd outcome
+			}
+			if(minutes<10) // if the minuts is single value  we add 0
+			{
+				System.out.println (hours+ ":0" + minutes + " pm") ;
+			}
+			else
+			{
+				System.out.println (hours+ ":" + minutes + " pm") ;
+			}
+
+		}
+		else
+		{
+			if (hours==00) // if its midnight we want to print only 1 zero
+			{
+				if(minutes<10) // if the minuts is single value  we add 0
+				{
+					System.out.println (hours+ ":0" + minutes + " am") ;
+				}
+			
+			else
+				{
+					System.out.println (0 + ":0" + minutes + " am") ;
+				}
+			}
+			else if(minutes<10) // if the minuts is single value  we add 0
+			{
+				System.out.println (hours+ ":0" + minutes + " am") ;
+			}
+			else
+			{
+				System.out.println (hours+ ":" + minutes + " am") ;
+			}
+		}
+
 	}
 }
