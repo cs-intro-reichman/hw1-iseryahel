@@ -9,6 +9,6 @@ public class Bill3
 		int sum = Integer.parseInt(args[3]); // the bill value
 		double share = sum/  3.0 ; // how much each should pay
 		share = Math.ceil(share); // round up the share
-		System.out.println("dear " + name3 + ", " + name2 + ", and " + name1 + ": " + "pay " + share + " Shekels each.");
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": " + "pay " + share + " Shekels each.");
 	}
 }

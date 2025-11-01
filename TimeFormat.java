@@ -12,11 +12,11 @@ public class TimeFormat {
 			}
 			if(minutes<10) // if the minuts is single value  we add 0
 			{
-				System.out.println (hours+ ":0" + minutes + " pm") ;
+				System.out.println (hours+ ":0" + minutes + " PM") ;
 			}
 			else
 			{
-				System.out.println (hours+ ":" + minutes + " pm") ;
+				System.out.println (hours+ ":" + minutes + " PM") ;
 			}
 
 		}
@@ -26,21 +26,21 @@ public class TimeFormat {
 			{
 				if(minutes<10) // if the minuts is single value  we add 0
 				{
-					System.out.println (hours+ ":0" + minutes + " am") ;
+					System.out.println (hours+ ":0" + minutes + " AM") ;
 				}
 			
 			else
 				{
-					System.out.println (0 + ":0" + minutes + " am") ;
+					System.out.println (0 + ":0" + minutes + " AM") ;
 				}
 			}
 			else if(minutes<10) // if the minuts is single value  we add 0
 			{
-				System.out.println (hours+ ":0" + minutes + " am") ;
+				System.out.println (hours+ ":0" + minutes + " AM") ;
 			}
 			else
 			{
-				System.out.println (hours+ ":" + minutes + " am") ;
+				System.out.println (hours+ ":" + minutes + " AM") ;
 			}
 		}
 
