@@ -1,3 +1,11 @@
+/* It is very important to "section" your code. Do 
+not be scared to write more lines if it will make it more readable. 
+the names of your variables should tell you what they are without looking 
+what the right side of the equality says
+For example instead of a1 name it aAsInt. better not name it a,b,c all together 
+You could use more valuable names like randomNumber1, randomNumber2... etc
+*/
+
 // Generates three integer random numbers in a given range,
 // and prints them in increasing order.
 public class Ascend {
@@ -19,3 +27,4 @@ public class Ascend {
 
 	}
 }
+

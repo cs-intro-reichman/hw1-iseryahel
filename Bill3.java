@@ -1,3 +1,6 @@
+/* again. Separate your code*/
+
+
 // Splits a restaurant bill evenly among three diners.
 public class Bill3
 {
